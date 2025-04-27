@@ -15,7 +15,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "GEMINI_API_KEY", "\"--------------------------------------------\"")
+        buildConfigField("String", "GEMINI_API_KEY", "\"AIzaSyBPAxWTGQcOlPT3Qi2gTQSRZCMnGlEVsWg\"")
     }
 
     buildTypes {
@@ -54,4 +54,16 @@ dependencies {
     implementation(libs.picasso)
     implementation(libs.generativeai)
     implementation(libs.guava)
+
+    // CameraX core library using the camera2 implementation
+    val camerax_version = "1.5.0-alpha06" // Kiểm tra phiên bản mới nhất
+    implementation ("androidx.camera:camera-core:${camerax_version}")
+    implementation ("androidx.camera:camera-camera2:${camerax_version}")
+    // CameraX Lifecycle Library
+    implementation ("androidx.camera:camera-lifecycle:${camerax_version}")
+    // CameraX View class
+    implementation ("androidx.camera:camera-view:${camerax_version}")
+
+    // ML Kit Text Recognition
+    implementation ("com.google.mlkit:text-recognition:19.0.1") // Kiểm tra phiên bản mới nhất
 }
