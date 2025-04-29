@@ -447,11 +447,13 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         if (explainDetails) {
             // Prompt yêu cầu dịch và giải thích thêm (nếu có)
             prompt = "Translate the following text from " + sourceLangName + " (" + sourceLangCode + ") " +
-                    "to " + targetLangName + " (" + targetLangCode + "). " +
+            "to " + targetLangName + " (" + targetLangCode + "). " +
+                    "Please answer entirely in " + targetLangName + " (" + targetLangCode + "). " +
                     "After the primary translation, if there are important nuances, common alternative translations, " +
-                    "or relevant grammatical points related to the translation that a learner might find useful, " +
-                    "please briefly explain them in a separate section labeled 'Explanation:'." +
+                    "relevant grammatical points, or noticeable cultural aspects related to the translation " +
+                    "(especially useful for travel or cultural understanding), please briefly explain them in a separate section labeled 'Explanation:' (also in " + targetLangName + ")." +
                     "\n\nText to translate:\n\"" + textToTranslate + "\"";
+
             Log.d("Prompt", "Requesting translation WITH explanation.");
 
         } else {
@@ -482,7 +484,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
                 toneInstruction = "friendly and conversational";
                 break;
         }
-        String prompt = "Paraphrase the following text in a " + toneInstruction + " tone, rewriting it clearly in different words while keeping the original meaning:\n\n\"" + textToParaphrase + "\"";
+        String prompt = "Paraphrase the following text in a " + toneInstruction + " tone, rewriting it clearly in different words while keeping the original meaning. Please respond in the same language as the original text:\n\n\"" + textToParaphrase + "\"";
         callGeminiApi(prompt, "GeminiParaphraseError");
     }
 
