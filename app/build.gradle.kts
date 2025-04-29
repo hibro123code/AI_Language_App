@@ -65,5 +65,5 @@ dependencies {
     implementation ("androidx.camera:camera-view:${camerax_version}")
 
     // ML Kit Text Recognition
-    implementation ("com.google.mlkit:text-recognition:19.0.1") // Kiểm tra phiên bản mới nhất
+    implementation ("com.google.mlkit:text-recognition:16.0.1") // Kiểm tra phiên bản mới nhất
 }
