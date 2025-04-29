@@ -11,5 +11,3 @@ Video Demo: https://www.youtube.com/watch?v=lCNvhYt341M
 -Add Swap between 2 Spinner
 -Add Checkbox to Explain or not Explain traslation details
 -Add Text Recognition from Picture (Latin)
-
-Chào mừng bạn đến với quán cà phê của chúng tôi! Chúng tôi phục vụ cà phê tươi, bánh ngọt thơm ngon và không gian ấm cúng để bạn thư giãn. Hãy ghé thăm và tận hưởng khoảng thời gian tuyệt vời tại đây!
